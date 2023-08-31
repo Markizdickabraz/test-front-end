@@ -1,0 +1,69 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: roboto, sens-serif;
+}
+
+.container {
+    margin: 0 auto;
+    width: 320px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 20px;
+    }
+
+    @media screen and (min-width:1200px) {
+        width: 1200px;
+        padding-top: 30px;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    @media screen and (min-width:1440px) {
+        width: 1440px;
+    }
+}
+
+
+.img {
+    display: block;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}

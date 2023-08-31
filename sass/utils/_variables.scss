@@ -1,0 +1,12 @@
+$colors: (
+    // text color and btn color
+    grey-blue-color:#859BA6,
+    white-color: #fff,
+    // contacts color
+    black-color : #333333,
+);
+$cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
+
+@function getColor($key) {
+    @return map-get($colors, $key);
+}

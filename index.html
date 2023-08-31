@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+        integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./dist/css/main.min.css" />
+    <title>test</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <div class="logo__container">
+                <a href="./index.html" class="logo">
+                    <img class="logo__img" src="./img/logo.svg" alt="logo">
+                </a>
+            </div>
+            <button type="button" class="contacts__modal-btn">Звʼязатись</button>
+
+            <div class="navigate menu__container js-menu-container" id="mobile-menu">
+                <button type="button" class="nav__button menu-toggle js-close-menu">
+                    <img src="./img/burger_close.svg" alt="modal close icon">
+                </button>
+                <nav class="navigation">
+                    <ul class="navigation__list">
+                        <li class="navigation__item"><a href="#" class="navigation__link">Компанія</a></li>
+                        <li class="navigation__item"><a href="#" class="navigation__link">Продукція</a></li>
+                        <li class="navigation__item"><a href="#" class="navigation__link">Статті</a></li>
+                        <li class="navigation__item"><a href="#" class="navigation__link">Рішення</a></li>
+                        <li class="navigation__item"><a href="#" class="navigation__link">Контакти</a></li>
+                    </ul>
+                </nav>
+
+                <a href="tel:0800000000" class="contacts__phone">0 (800) 00-00-00</a>
+                <div class="change-lang">
+                    <ul class="change-lang__list">
+                        <li class="change-lang__item"><a href="#" class="change-lang__link is-active">UA</a></li>
+                        <li class="change-lang__item"><a href="#" class="change-lang__link">RU</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <button type="button" class="nav__button menu-toggle js-open-menu" aria-expanded="false"
+                aria-controls="mobile-menu">
+                <img src="./img/burger.svg" alt="burger menu icon">
+            </button>
+        </div>
+
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero__container">
+                <div class="hero-left__container">
+                    <h1 class="hero-left__title">Meltem</h1>
+                    <p class="hero-left__text">Meltem – це гарантовано якісне вентиляційне обладнання
+                        від німецького заводу.</p>
+                    <button type="button" class="hero-left__btn">Продукція</button>
+                </div>
+                <div class="hero-img__container">
+                    <img class="hero__img" src="./img/fan.webp" alt="fan" width="240" height="150">
+                </div>
+                <div class="hero-right__container">
+                    <p class="hero-right__text">Відцентровий витяжний вентилятор</p>
+                    <h2 class="hero-right__title">Meltem V-II 30-N</h2>
+                    <button type="button" class="hero-right__btn">Детальніше</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./js/mobileMenu.js"></script>
+</body>
+
+</html>
