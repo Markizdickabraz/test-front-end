@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
         integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./dist/css/main.min.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
 
     <title>test</title>
 </head>
@@ -58,71 +58,131 @@
 
     <main>
         <section class="hero">
-            <div class="container hero__container">
-                <div class="hero-left__container">
-                    <h1 class="hero-left__title">Meltem</h1>
-                    <p class="hero-left__text">Meltem – це гарантовано якісне вентиляційне обладнання
-                        від німецького заводу.</p>
-                    <button type="button" class="hero-left__btn">Продукція</button>
+            <div class="container ">
+                <div class="swiper-container"></div>
+                <div class="swiper-wrapper reviews-slider">
+                    <div class="swiper-slide ">
+                        <div class="hero__container">
+                            <div class="hero-left__container">
+                                <h1 class="hero-left__title">Meltem</h1>
+                                <p class="hero-left__text">Meltem – це гарантовано якісне вентиляційне обладнання
+                                    від німецького заводу.</p>
+                                <button type="button" class="hero-left__btn">Продукція</button>
+                            </div>
+                            <div class="hero-img__container">
+                                <img class="hero__img" src="./img/fan.webp" alt="fan" width="240" height="150">
+                            </div>
+                            <div class="hero-right__container">
+                                <p class="hero-right__text">Відцентровий витяжний вентилятор</p>
+                                <h2 class="hero-right__title">Meltem V-II 30-N</h2>
+                                <button type="button" class="hero-right__btn">Детальніше</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide ">
+                        <div class="hero__container">
+                            <div class="hero-left__container">
+                                <h1 class="hero-left__title">Meltem</h1>
+                                <p class="hero-left__text">Meltem – це гарантовано якісне вентиляційне обладнання
+                                    від німецького заводу.</p>
+                                <button type="button" class="hero-left__btn">Продукція</button>
+                            </div>
+                            <div class="hero-img__container">
+                                <img class="hero__img" src="./img/fan.webp" alt="fan" width="240" height="150">
+                            </div>
+                            <div class="hero-right__container">
+                                <p class="hero-right__text">Відцентровий витяжний вентилятор</p>
+                                <h2 class="hero-right__title">Meltem V-II 30-N</h2>
+                                <button type="button" class="hero-right__btn">Детальніше</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide ">
+                        <div class="hero__container">
+                            <div class="hero-left__container">
+                                <h1 class="hero-left__title">Meltem</h1>
+                                <p class="hero-left__text">Meltem – це гарантовано якісне вентиляційне обладнання
+                                    від німецького заводу.</p>
+                                <button type="button" class="hero-left__btn">Продукція</button>
+                            </div>
+                            <div class="hero-img__container">
+                                <img class="hero__img" src="./img/fan.webp" alt="fan" width="240" height="150">
+                            </div>
+                            <div class="hero-right__container">
+                                <p class="hero-right__text">Відцентровий витяжний вентилятор</p>
+                                <h2 class="hero-right__title">Meltem V-II 30-N</h2>
+                                <button type="button" class="hero-right__btn">Детальніше</button>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="hero-img__container">
-                    <img class="hero__img" src="./img/fan.webp" alt="fan" width="240" height="150">
-                </div>
-                <div class="hero-right__container">
-                    <p class="hero-right__text">Відцентровий витяжний вентилятор</p>
-                    <h2 class="hero-right__title">Meltem V-II 30-N</h2>
-                    <button type="button" class="hero-right__btn">Детальніше</button>
-                </div>
+            </div>
+            </div>
             </div>
         </section>
     </main>
+
 
     <div data-modal class="backdrop is-hidden">
         <div class="modal">
             <button type="button" class="modal__button-close" data-modal-close>
                 <img src="./img/formClose.svg" alt="form close button">
             </button>
-            <!DOCTYPE html>
-            <html>
 
-            <head>
-                <title>Custom Phone Validation</title>
-                <link rel="stylesheet" type="text/css" href="styles.css">
-            </head>
-
-            <body>
-                <form class="form" id="myForm">
-                    <strong class="form__title">Залишайте заявку</strong>
-                    <p class="form__text">Ми звʼяжемося з вами найближчим часом</p>
-                    <ul class="form__list list">
-                        <li>
-                            <label for="name" class="form__label">
-                                <input type="text" class="form__input" id="name" placeholder="Ваше імʼя*">
-                            </label>
-                        </li>
-                        <li>
-                            <label for="tel" class="form__label">
-                                <input type="text" class="form__input" id="phone-mask" placeholder="+380-00-000-00-00*">
-                                <img class="form__icon" src="./img/form-icon.svg" alt="icon form">
-                            </label>
-                        </li>
-                    </ul>
-                    <button type="button" class="form__btn" onclick="validateForm()">Відправить</button>
-                    <p class="form__consent">Натискаючи кнопку "Надіслати", ви погоджуєтесь з
-                        <a class="form__link" href="#">Правилами обробки персональних даних.</a>
-                    </p>
-                </form>
-
+            <form class="form" id="myForm">
+                <strong class="form__title">Залишайте заявку</strong>
+                <p class="form__text">Ми звʼяжемося з вами найближчим часом</p>
+                <ul class="form__list list">
+                    <li>
+                        <label for="name" class="form__label">
+                            <input type="text" class="form__input" id="name" placeholder="Ваше імʼя*">
+                        </label>
+                    </li>
+                    <li>
+                        <label for="tel" class="form__label">
+                            <input type="text" class="form__input" id="phone-mask" placeholder="+380-00-000-00-00*">
+                            <img class="form__icon" src="./img/form-icon.svg" alt="icon form">
+                        </label>
+                    </li>
+                </ul>
+                <button type="button" class="form__btn" onclick="validateForm()">Відправить</button>
+                <p class="form__consent">Натискаючи кнопку "Надіслати", ви погоджуєтесь з
+                    <a class="form__link" href="#">Правилами обробки персональних даних.</a>
+                </p>
+            </form>
 
 
         </div>
 
     </div>
 
+
+    <div id="cookiePopup" class="pop-up">
+        <p class="pop-up__text">Використовуючи цей сайт, ви даєте згоду на роботу з файлами <span
+                class="pop-up__text--span">cookies</span>.</p>
+        <button id="acceptButton" class="pop-up__btn">Згоден</button>
+    </div>
+
+
+    <!-- Підключення бібліотеки jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Підключення бібліотеки Slick Carousel -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+
     <script src="https://unpkg.com/imask"></script>
     <script src="./js/mobileMenu.js"></script>
     <script src="./js/modal.js"></script>
     <script src="./js/phoneMask.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/popUp.js"></script>
 </body>
 
 </html>

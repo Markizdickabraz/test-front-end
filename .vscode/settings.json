@@ -8,7 +8,7 @@
         {
             "extensionName": ".min.css",
             "format": "compressed",
-            "savePath": "/dist/css"
+            "savePath": "/css"
         }
     ],
     "liveSassCompile.settings.excludeList": [
@@ -17,7 +17,6 @@
     ],
     "liveSassCompile.settings.generateMap": true,
     "liveSassCompile.settings.autoprefix": [
-        "> 1%",
-        "last 2 versions"
+        "defaults"
     ]
 }
