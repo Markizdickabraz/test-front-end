@@ -11,6 +11,7 @@
         integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./dist/css/main.min.css" />
+
     <title>test</title>
 </head>
 
@@ -22,7 +23,7 @@
                     <img class="logo__img" src="./img/logo.svg" alt="logo">
                 </a>
             </div>
-            <button type="button" class="contacts__modal-btn">Звʼязатись</button>
+            <button type="button" data-modal-open class="contacts__modal-btn">Звʼязатись</button>
 
             <div class="navigate menu__container js-menu-container" id="mobile-menu">
                 <button type="button" class="nav__button menu-toggle js-close-menu">
@@ -75,7 +76,53 @@
             </div>
         </section>
     </main>
+
+    <div data-modal class="backdrop is-hidden">
+        <div class="modal">
+            <button type="button" class="modal__button-close" data-modal-close>
+                <img src="./img/formClose.svg" alt="form close button">
+            </button>
+            <!DOCTYPE html>
+            <html>
+
+            <head>
+                <title>Custom Phone Validation</title>
+                <link rel="stylesheet" type="text/css" href="styles.css">
+            </head>
+
+            <body>
+                <form class="form" id="myForm">
+                    <strong class="form__title">Залишайте заявку</strong>
+                    <p class="form__text">Ми звʼяжемося з вами найближчим часом</p>
+                    <ul class="form__list list">
+                        <li>
+                            <label for="name" class="form__label">
+                                <input type="text" class="form__input" id="name" placeholder="Ваше імʼя*">
+                            </label>
+                        </li>
+                        <li>
+                            <label for="tel" class="form__label">
+                                <input type="text" class="form__input" id="phone-mask" placeholder="+380-00-000-00-00*">
+                                <img class="form__icon" src="./img/form-icon.svg" alt="icon form">
+                            </label>
+                        </li>
+                    </ul>
+                    <button type="button" class="form__btn" onclick="validateForm()">Відправить</button>
+                    <p class="form__consent">Натискаючи кнопку "Надіслати", ви погоджуєтесь з
+                        <a class="form__link" href="#">Правилами обробки персональних даних.</a>
+                    </p>
+                </form>
+
+
+
+        </div>
+
+    </div>
+
+    <script src="https://unpkg.com/imask"></script>
     <script src="./js/mobileMenu.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/phoneMask.js"></script>
 </body>
 
 </html>
