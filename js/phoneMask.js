@@ -1,7 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
   var phoneInput = document.getElementById('phone-mask');
   var nameInput = document.getElementById('name');
+  const btnSubmit = document.querySelector('.form__btn');
 
+btnSubmit.addEventListener('click', validateForm);  
+  
   var phoneMask = IMask(
     phoneInput,
     {
@@ -70,10 +73,9 @@ function validateForm() {
   }
 
   var modalContent = document.querySelector('.modal');
-  // document.getElementById('myForm').submit();
 
   modalContent.innerHTML = `<div class="submit__container">
-  <img class="submit__img" src="../img/quality.svg" alt="success icon">
+  <img class="submit__img" src="./img/quality.svg" alt="success icon">
   <h2 class='submit__title'> Дякуємо за заявку!</h2 >
   <p class="submit__text">Ваші дані успішно надіслані!</p></div>`;
   setTimeout(function () { 

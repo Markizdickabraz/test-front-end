@@ -10,7 +10,6 @@
     mobileMenu.classList.toggle('is-open');
 
     if (mobileMenu.classList[3] === 'is-open') {
-      console.log(mobileMenu.classList);
       openMenuBtn.style.display = 'none';
     }
 
